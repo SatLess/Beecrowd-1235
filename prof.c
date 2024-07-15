@@ -9,7 +9,7 @@ void reverse(char *vec,int len){
   for(int i = len-1;i>=0;i--){
     vec[j] = copia[i];
     ++j;
-  }
+  } vec[j+1] = '\0';
   
 }
 
@@ -17,7 +17,7 @@ void copy(char *vec, char *src, int len){
 
   for(int i = 0; i< len; i++){
     vec[i] = src[i];
-  }}
+  } vec[len] = '\0';}
 
   void copy2(char *vec, char *src, int len, int limit){
   int j = 0;
@@ -25,7 +25,7 @@ void copy(char *vec, char *src, int len){
     if(i == limit-1){break;}
     vec[j] = src[i];
     ++j;
-  }
+  }vec[j+1]= '\0';
 
 }
 
